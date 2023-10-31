@@ -16,7 +16,8 @@ public class Main {
                                 -769233.1597223077, 314359.2923280898, -83556.5476190632,
                                  13048.390652560154, -909.391534391757};
         PolynomialFunction func = new PolynomialFunction(coef);
-        Lagrange.Calculate();
+        // UNCOMMENT THIS TO CALCULATE POLYNOMIAL AND PRINT IT OUT
+        //Lagrange.Calculate();
         double valRec = rectangleMethod(func, a, b, n);
         double valTrap = trapezoidMethod(func, a, b, n);
         double valSimpson = simpsonMethod(func, a, b, n);
